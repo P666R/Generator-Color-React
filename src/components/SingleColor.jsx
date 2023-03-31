@@ -9,7 +9,7 @@ function SingleColor({ index, color }) {
         await navigator.clipboard.writeText(`#${hex}`);
         toast.success("Color copied to clipboard");
       } catch (error) {
-        toast.error("Clipboard to copy to clipboard");
+        toast.error("Failed to copy color to clipboard");
       }
     } else {
       toast.error("Clipboard access not available");
